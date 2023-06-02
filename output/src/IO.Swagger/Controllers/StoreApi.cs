@@ -35,7 +35,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Invalid ID supplied</response>
         /// <response code="404">Order not found</response>
         [HttpDelete]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/store/order/{orderId}")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/store/order/{orderId}")]
         [ValidateModelState]
         [SwaggerOperation("DeleteOrder")]
         public virtual IActionResult DeleteOrder([FromRoute][Required]long? orderId)
@@ -55,7 +55,7 @@ namespace IO.Swagger.Controllers
         /// <remarks>Returns a map of status codes to quantities</remarks>
         /// <response code="200">successful operation</response>
         [HttpGet]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/store/inventory")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/store/inventory")]
         [Authorize(AuthenticationSchemes = ApiKeyAuthenticationHandler.SchemeName)]
         [ValidateModelState]
         [SwaggerOperation("GetInventory")]
@@ -82,7 +82,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Invalid ID supplied</response>
         /// <response code="404">Order not found</response>
         [HttpGet]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/store/order/{orderId}")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/store/order/{orderId}")]
         [ValidateModelState]
         [SwaggerOperation("GetOrderById")]
         [SwaggerResponse(statusCode: 200, type: typeof(Order), description: "successful operation")]
@@ -112,7 +112,7 @@ namespace IO.Swagger.Controllers
         /// <response code="200">successful operation</response>
         /// <response code="400">Invalid Order</response>
         [HttpPost]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/store/order")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/store/order")]
         [ValidateModelState]
         [SwaggerOperation("PlaceOrder")]
         [SwaggerResponse(statusCode: 200, type: typeof(Order), description: "successful operation")]
