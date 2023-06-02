@@ -34,7 +34,7 @@ namespace IO.Swagger.Controllers
         /// <param name="body">Created user object</param>
         /// <response code="0">successful operation</response>
         [HttpPost]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user")]
         [ValidateModelState]
         [SwaggerOperation("CreateUser")]
         public virtual IActionResult CreateUser([FromBody]User body)
@@ -51,7 +51,7 @@ namespace IO.Swagger.Controllers
         /// <param name="body">List of user object</param>
         /// <response code="0">successful operation</response>
         [HttpPost]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user/createWithArray")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user/createWithArray")]
         [ValidateModelState]
         [SwaggerOperation("CreateUsersWithArrayInput")]
         public virtual IActionResult CreateUsersWithArrayInput([FromBody]List<User> body)
@@ -68,7 +68,7 @@ namespace IO.Swagger.Controllers
         /// <param name="body">List of user object</param>
         /// <response code="0">successful operation</response>
         [HttpPost]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user/createWithList")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user/createWithList")]
         [ValidateModelState]
         [SwaggerOperation("CreateUsersWithListInput")]
         public virtual IActionResult CreateUsersWithListInput([FromBody]List<User> body)
@@ -87,7 +87,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Invalid username supplied</response>
         /// <response code="404">User not found</response>
         [HttpDelete]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user/{username}")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user/{username}")]
         [ValidateModelState]
         [SwaggerOperation("DeleteUser")]
         public virtual IActionResult DeleteUser([FromRoute][Required]string username)
@@ -109,7 +109,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Invalid username supplied</response>
         /// <response code="404">User not found</response>
         [HttpGet]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user/{username}")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user/{username}")]
         [ValidateModelState]
         [SwaggerOperation("GetUserByName")]
         [SwaggerResponse(statusCode: 200, type: typeof(User), description: "successful operation")]
@@ -140,7 +140,7 @@ namespace IO.Swagger.Controllers
         /// <response code="200">successful operation</response>
         /// <response code="400">Invalid username/password supplied</response>
         [HttpGet]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user/login")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user/login")]
         [ValidateModelState]
         [SwaggerOperation("LoginUser")]
         [SwaggerResponse(statusCode: 200, type: typeof(string), description: "successful operation")]
@@ -165,7 +165,7 @@ namespace IO.Swagger.Controllers
         /// </summary>
         /// <response code="0">successful operation</response>
         [HttpGet]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user/logout")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user/logout")]
         [ValidateModelState]
         [SwaggerOperation("LogoutUser")]
         public virtual IActionResult LogoutUser()
@@ -185,7 +185,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Invalid user supplied</response>
         /// <response code="404">User not found</response>
         [HttpPut]
-        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.0/user/{username}")]
+        [Route("/xlsoftkk/swaggerhub-sample-v3/1.0.2/user/{username}")]
         [ValidateModelState]
         [SwaggerOperation("UpdateUser")]
         public virtual IActionResult UpdateUser([FromBody]User body, [FromRoute][Required]string username)
